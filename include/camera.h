@@ -1,6 +1,10 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
+#include <glm/gtc/matrix_transform.hpp>
+#include <iostream>
+#include <GLFW/glfw3.h>
+
 class Camera{
 public:
     Camera(glm::vec3 position, glm::vec3 front, glm::vec3 up);

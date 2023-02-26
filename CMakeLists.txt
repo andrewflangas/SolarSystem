@@ -9,10 +9,16 @@ set(CMAKE_CXX_STANDARD 11)
 
 # Find OpenGL and GLFW libraries
 find_package(OpenGL REQUIRED)
+find_package(assimp REQUIRED)
 find_package(glfw3 REQUIRED)
 
 # Include directories
-include_directories(${GLFW_INCLUDE_DIRS})
+include_directories(
+        ${OPENGL_INCLUDE_DIRS}
+        ${GLFW_INCLUDE_DIRS}
+        ${GLM_INCLUDE_DIRS}
+)
+
 include_directories(include)
 
 # Source files
@@ -35,5 +41,9 @@ set(HEADERS
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
-# Link OpenGL and GLFW libraries
-target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} glfw)
+# Link the libraries
+target_link_libraries(${PROJECT_NAME}
+        ${OPENGL_LIBRARIES}
+        ${GLFW_LIBRARIES}
+        ${GLM_LIBRARIES}
+        )
