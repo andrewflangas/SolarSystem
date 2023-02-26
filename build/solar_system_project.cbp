@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="solar_system_project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\usr\;CMake Files\..\..\usr\local\;CMake Files\..\..\usr\local\lib\;CMake Files\..\..\usr\local\lib\cmake\;CMake Files\..\..\usr\local\lib\cmake\assimp-5.2\;CMake Files\..\..\usr\lib\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Graphics/SolarSystem/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="solar_system_project">
+				<Option output="/Graphics/SolarSystem/build/solar_system_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Graphics/SolarSystem/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Graphics/SolarSystem/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 solar_system_project"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="solar_system_project/fast">
+				<Option output="/Graphics/SolarSystem/build/solar_system_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Graphics/SolarSystem/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Graphics/SolarSystem/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 solar_system_project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Graphics/SolarSystem/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Graphics/SolarSystem/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/Graphics/SolarSystem/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Graphics/SolarSystem/include/camera.h">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/include/model.h">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/include/planet.h">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/include/shader.h">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/include/ui.h">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/camera.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/main.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/model.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/planet.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/shader.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/src/ui.cpp">
+			<Option target="solar_system_project"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/local/lib/cmake/assimp-5.2/assimpConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\local\lib\cmake\assimp-5.2\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/local/lib/cmake/assimp-5.2/assimpConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\local\lib\cmake\assimp-5.2\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/local/lib/cmake/assimp-5.2/assimpTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\local\lib\cmake\assimp-5.2\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/local/lib/cmake/assimp-5.2/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\local\lib\cmake\assimp-5.2\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+		<Unit filename="/Graphics/SolarSystem/../../usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\usr\lib\x86_64-linux-gnu\cmake\glfw3\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

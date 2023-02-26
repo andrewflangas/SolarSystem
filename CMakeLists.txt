@@ -27,6 +27,8 @@ set(SOURCES
         src/camera.cpp
         src/planet.cpp
         src/ui.cpp
+        src/shader.cpp
+        src/model.cpp
 )
 
 # Header files
