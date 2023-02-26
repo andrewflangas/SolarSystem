@@ -1,9 +1,12 @@
 #ifndef UI_H
 #define UI_H
 
+#include <iostream>
+#include <GLFW/glfw3.h>
+
 class UI{
 public:
-    UI(GLFwindow* window);
+    UI(GLFWwindow* window);
     bool isKeyPressed(int key);
     bool isMouseButtonPressed(int button);
     bool isMouseMoved();
@@ -13,7 +16,7 @@ public:
     void pollEvents();
 
 private:
-    GLFWindow* m_Window;
+    GLFWwindow* m_Window;
     double m_LastX;
     double m_LastY;
     bool m_FirstMouse;

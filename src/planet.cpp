@@ -1,7 +1,8 @@
 #include "planet.h"
 
 Planet::Planet(std::string modelPath, std::string texturePath, float radius, float orbitRadius, float orbitSpeed,
-               float rotationSpeed) {
+               float rotationSpeed) : m_Model(modelPath, texturePath), m_Radius(radius), m_OrbitRadius(orbitRadius),
+               m_OrbitSpeed(orbitSpeed), m_RotationSpeed(rotationSpeed), m_OrbitAngle(0), m_RotationAngle(0){
     updatePosition();
 }
 
@@ -20,7 +21,7 @@ void Planet::draw(Shader &shader, glm::mat4 &projection, glm::mat4 &view) {
     glm::mat4 model = getModelMatrix();
     shader.setMat4("model", model);
 
-    m_Model.draw(shader);
+    m_Model.Draw(shader);
 }
 
 glm::mat4 Planet::getModelMatrix() {

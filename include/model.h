@@ -39,7 +39,7 @@ private:
 
 class Model{
 public:
-    Model(const char* path);
+    Model(const std::string& modelPath, const std::string& texturePath);
     void Draw(Shader& shader);
 
 private:
