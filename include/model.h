@@ -9,6 +9,7 @@
 #include <glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <stb_image.h>
 #include "shader.h"
 
 struct vertex{
@@ -23,6 +24,8 @@ struct Texture {
     aiString path;
 };
 
+unsigned int TextureFromFile(const char* path, const std::string& directory);
+
 class Mesh{
 public:
     std::vector<vertex> vertices;
@@ -34,7 +37,7 @@ public:
 
 private:
     unsigned int VAO, VBO, EBO;
-    void setupMesh();
+    void SetupMesh();
 };
 
 class Model{
@@ -46,10 +49,10 @@ private:
     std::vector<Mesh> meshes;
     std::string directory;
     std::vector<Texture> textures_loaded;
-    void loadModel(std::string path);
-    void processNode(aiNode* node, const aiScene* scene);
-    Mesh processMesh(aiMesh* mesh, const aiScene* scene);
-    std::vector<Texture> loadMaterialTextures(aiMaterial* mat, aiTextureType type, std::string typeName);
+    void LoadModel(std::string path);
+    void ProcessNode(aiNode* node, const aiScene* scene);
+    Mesh ProcessMesh(aiMesh* mesh, const aiScene* scene);
+    std::vector<Texture> LoadMaterialTextures(aiMaterial* mat, aiTextureType type, std::string typeName);
 };
 
 #endif

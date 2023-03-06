@@ -1,3 +1,0 @@
-/Graphics/SolarSystem/build/CMakeFiles/solar_system_project.dir
-/Graphics/SolarSystem/build/CMakeFiles/edit_cache.dir
-/Graphics/SolarSystem/build/CMakeFiles/rebuild_cache.dir
