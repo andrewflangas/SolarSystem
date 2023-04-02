@@ -24,21 +24,11 @@ include_directories(include)
 # Source files
 set(SOURCES
         src/main.cpp
-        src/camera.cpp
-        src/planet.cpp
-        src/ui.cpp
-        src/shader.cpp
-        src/model.cpp
-)
+        )
 
 # Header files
 set(HEADERS
-        include/camera.h
-        include/model.h
-        include/planet.h
-        include/shader.h
-        include/ui.h
-)
+        include/Planet.h src/Planet.cpp include/TextureLoader.h src/TextureLoader.cpp)
 
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
